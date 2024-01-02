@@ -1,2 +1,1 @@
-# CC-Website
-Colell und Čakar website 
+# CC-Repo
