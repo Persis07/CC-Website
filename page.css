@@ -1,0 +1,362 @@
+body {
+    background: #fff;
+  }
+  
+
+ video{
+    object-fit: cover;
+ }
+
+.section-head p,
+.project-head p{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section-head h1,
+.project-head h1{
+    padding: 0 3px;
+}
+
+.services-section {
+    text-align: left;
+    margin-top: 190px;
+    padding: 0 900px;
+   }
+
+
+.service-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.service-card {
+    
+    margin: 0 10px 20px;
+    flex: 1;
+    max-width: 200px;
+    height: 20px;
+    border: 1px solid #013a2f;
+    border-radius: 8px;
+    padding: 20px;
+   }
+
+   .service-card:hover{
+    background-color: #013a2f;
+   }
+
+
+.service-card h2 {
+    font-size: 1.5rem;
+    color: #c50077;
+    text-align: center;
+    margin-top: -0;
+    
+}
+
+.service-card h2 a{
+    text-decoration: none;
+}
+.services h1{
+        
+        font-family: 'Aleo', sans-serif;
+        color: #013a2f;
+        font-weight: bold;
+        margin-bottom: 100px;
+        margin-top: 250px;
+        
+        }
+
+
+ /* Projekte/Portfolio section */
+
+ #Projekte{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.portfolio-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 80px;
+padding: 60px;
+max-width: 2050px; 
+width: 100%;
+}
+
+.project {
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: opacity 0.3s;
+}
+
+.project img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.project.large {
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.project.medium {
+grid-column: span 1;
+
+}
+
+.project.small {
+grid-column: span 1;
+}
+
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+
+}
+.project:hover .overlay h3 a{
+    font-size: 2.5rem;
+}
+
+.overlay h3{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.overlay h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.overlay p{
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.second-paragraph{
+    font-size: 35px;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 50px;
+        margin-left: 1275px;
+        
+}
+
+ /* Agentur */
+
+#Agentur{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin-bottom: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    }
+   
+ .agentur-content{
+     margin-top: 200px;
+     position: relative;
+     margin-top: 10px;
+     margin-bottom: 300px;
+ }
+ 
+ .agentur-content h3{
+     margin-bottom: 30px;
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
+ 
+ .agentur-content p{
+     font-size: 1.2rem;
+     font-weight: 200;
+ }
+ 
+
+
+ /* Unsere Kunden*/
+
+.logos-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 2000px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 200px;
+    margin-bottom: 300px;
+   
+}
+
+.logos-container > h1
+{
+    position: absolute;
+    top: -150px;
+    left: 0;
+    margin: 0;
+    padding: 0 260px;
+    font-family: 'Aleo', serif;
+    font-size: 3rem;
+    color: #013a2f;
+    }
+
+    h1{
+        margin: 0;
+    padding: 0 260px;
+    font-family: 'Aleo', serif;
+    font-size: 3rem;
+    color: #013a2f; 
+    }
+
+    .logos{
+        max-width: 70%;
+        max-height: 230px;
+        padding: 22px;
+        display: block;
+        margin: 0 auto;
+    }
+
+   
+
+#kunden-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1400px;
+   /* background-color: rgb(245, 247, 249); */
+    margin-top: 10px;
+   /* margin-right: 200px;*/
+   }
+
+   /* Kontakt section */
+
+   #Kontakt{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-container {
+    width: 1500px;
+    padding: 20px;
+   /* border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+.contact-container h2 {
+    font-family: 'Aleo', serif;
+    font-size: 3rem;
+    color: #013a2f;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    
+    color: #013a2f;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    color: #013a2f;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #013a2f;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+
+    
+}
+
+button:hover {
+    background-color: #c50077;
+}
+
+.fa-solid{
+    font-size: 50px;
+    
+}
+
+.fa-paper-plane-top{
+    font-size: 10px;
+    color: #fff;
+}
+
+/* Footer section */
+
+footer{
+    background-color: #fff;
+    color: #013a2f;
+    padding: 100px;
+    height: 600px;
+    border-top: #c50077 1px solid;
+}
+
+footer  p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    
+    
+}
